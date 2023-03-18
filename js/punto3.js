@@ -16,7 +16,7 @@ mostrar sus propiedades, calcular el perímetro y el área
         return this.alto*this.ancho;
       }
       mostrar(){
-        document.write(`Los Datos ingresados son:<br> alto: ${this.alto} <br> ancho: ${this.ancho}<br>`);
+        return document.write(`Los Datos ingresados son:<br> alto: ${this.alto} <br> ancho: ${this.ancho}<br>`);
       }
     }
 
