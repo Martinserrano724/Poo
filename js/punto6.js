@@ -22,10 +22,10 @@ class Libro {
         #autor;
         #numeroDePaginas;
     constructor(ISBN, titulo,autor,numeroDePaginas) {
-        this.ISBN = ISBN;
-        this.titulo = titulo;
-        this.autor=autor;
-        this.numeroDePaginas = numeroDePaginas;
+        this.#ISBN = ISBN;
+        this.#titulo = titulo;
+        this.#autoror=autor;
+        this.#numeroDePaginas = numeroDePaginas;
         
       }
       get ISBN(){
@@ -55,7 +55,7 @@ class Libro {
 
       mostrarLibro() {
         document.write(`
-        <p> “El libro ${this.#titulo} con ISBN ${this.#ISBN} creado por el autor ${this.#autor} tiene  ${this.#numeroDePaginas} páginas</p>
+        <p> El libro ${this.#titulo} con ISBN ${this.#ISBN} creado por el autor ${this.#autor} tiene  ${this.#numeroDePaginas} páginas</p>
         `);
       }
       
